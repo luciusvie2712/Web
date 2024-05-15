@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,300&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    background: radial-gradient(rgb(221, 210, 210), white);
+    padding: 20px;
+}
+.dieuhuong{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.lable{
+    text-decoration: none;
+    color: black;
+}
+.icon-bag{
+    color: black;
+    cursor: pointer;
+}
+.logo img{
+    position: absolute;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+}
+
+.lable{
+    border: none;
+}
+.lable:hover{
+    text-shadow: 2px 2px 4px gray, -2px -2px 4px lightgray;
+}
+
+.search{
+    padding: 5px 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.search input{
+    width: 500px;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    padding-left: 5px;
+    line-height: 20px;
+}
+.search input:focus{
+    border: 1px solid black;
+    border-radius: 5px 0 0 5px;
+}
+.search .bt{
+    width: 70px;
+    height: 35px;
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    border-radius:  0 5px 5px 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.bt:hover{
+    background-color: black;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.container-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.small-container{
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+/*-phan hinh anh mo ta-*/
+
+.small-img{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.IMGProduct{
+    width: 40%;
+}
+
+/*-phan chi tiet san pham-*/
+
+.details{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 60%;
+    margin-left: 30px;
+}
+.details h4{
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+.details select{
+    width: 100px;
+    height: 30px;
+    border: 1px solid rgb(32, 32, 106);
+    display: block;
+    margin-bottom: 20px;
+}
+.details input{
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid rgb(32, 32, 106);
+    display: block;
+    margin-bottom: 20px;
+}
+.details input:focus{
+    outline: none;
+}
+.details button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: blue;
+    text-align: center;
+    box-shadow: 2px 2px 5px black;
+    border: none;
+}
+.details button:hover{
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px black;
+    text-transform: uppercase;
+}
+.details .addtocart{
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none ;
+    color: white;
+}
+
+/*--- Phan hien thi them san pham lien quan---*/
+
+.view-more{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    padding:  0 200px 20px 200px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.row img{
+    max-width: 100%;
+    height: 600px;
+    box-shadow: 2px 2px 4px gray, -2px -2px 6px lightgray;
+}
+.box-2{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 50px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.box-2 img{
+    width: 100%;
+    height: 330px;
+}
+.title{
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto 20px;
+    line-height: 40px;
+    position: relative;
+    color: black;
+}
+.title::after   {
+    content: '';
+    background: orange;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) ;
+}
+h4{
+    font-weight: normal;
+    color: rgb(13, 15, 77);
+}
+.box-2 p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.box-2 a{
+    text-decoration: none;
+}
+.box-2:hover{
+    transform: translateY(-9px);
+}
+
+
+.contact{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.container-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    padding: 20px;
+}
+.contactsmall{
+    color: white;
+}
+.icon-time{
+    width: 20px;
+    height: 20px;
+}
+.email{
+    color: white;
+    text-decoration: none;
+}
